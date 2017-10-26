@@ -12,15 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../Styles/commonLibs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS Specific for this page -->
-    <link rel="stylesheet" type="text/css" href="../Styles/forScreenViews/Login/form-elements.css">
-    <link rel="stylesheet" type="text/css" href="../Styles/forScreenViews/Login/style.css">
-
-    <!-- Javascript Common -->
-    <script type="text/javascript" src="../Scripts/common/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../Scripts/common/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Javascript Specific for this page -->
-    <script src="assets/js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Styles/Specific/Login.css">
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="../Images/Handheld_32x32.png">
@@ -33,9 +25,9 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-md-6 middle-border">
                 <!-- Login Form -->
-                <form id="login-form" role="form" action="" method="post" class="login-form" style="display: block;">
+                <form id="login-form" role="form" action="" method="post" class="form-signin" style="display: block;">
                     <div class="form-box">
                         <div class="form-top">
                             <!-- Form Header -->
@@ -48,7 +40,7 @@
                                 <i class="fa fa-lock"></i>
                             </div>
                             <!-- Form Top-Right -->
-                            <div style="float:right; font-size: 80%; position: relative; top:-10px">
+                            <div style="float:right; font-size: 80%; position: relative; top:5px">
                                 <a href="#">Esqueceu a Senha ?</a></div>
                         </div>
                         <!-- Login Form Fields -->
@@ -101,7 +93,7 @@
                     </div>
                 </form>
                 <!-- Register Form -->
-                <form id="register-form" role="form" action="" method="post" class="registration-form" style="display:none;">
+                <form id="register-form" role="form" action="" method="post" class="registration-form" class="form-signin" style="display:none;">
                     <div class="form-box">
                         <!-- Form Header -->
                         <div class="form-top">
@@ -168,7 +160,9 @@
                     </div>
                     <!-- Register Form -->
                 </form>
-                <!-- sm-5  location of the forms on the screen -->
+            </div>
+            <div class="col-md-6 ">
+                <p></p>
             </div>
             <!-- form ROW -->
         </div>
@@ -177,6 +171,14 @@
 
     <footer>
     </footer>
+
+    <!-- Javascript Common -->
+    <script type="text/javascript" src="../Scripts/common/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/common/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Javascript Specific for this page -->
+    <script src="../Scripts/Specific/Login.js"></script>
+
 
 </body>
 
