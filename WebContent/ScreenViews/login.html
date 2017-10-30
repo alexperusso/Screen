@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -33,15 +34,16 @@
                             <!-- Form Header -->
                             <div class="form-top-left">
                                 <h3>Acesso ao Sistema </h3>
-                                <p>Digite o usuário e senha para acessar:</p>
+                                <h2>PrimeTester</h2>
                             </div>
                             <!-- Lock -->
                             <div class="form-top-right">
                                 <i class="fa fa-lock"></i>
                             </div>
                             <!-- Form Top-Right -->
-                            <div style="float:right; font-size: 80%; position: relative; top:5px">
-                                <a href="#">Esqueceu a Senha ?</a></div>
+                            <div style="float:right; font-size: 80%; position: relative; top:5px; cursor: pointer;">
+                                <a style="color:brown;" data-toggle="modal" data-target="#modalForgot">Esqueceu a Senha ?</a>
+                            </div>
                         </div>
                         <!-- Login Form Fields -->
                         <div class="form-bottom">
@@ -99,6 +101,7 @@
                         <div class="form-top">
                             <div class="form-top-left">
                                 <h3>Solicite Acesso</h3>
+                                <h2>PrimeTester</h2>
                                 <p>Preencha os dados abaixo para obter acesso ao sistema:</p>
                             </div>
                             <div class="form-top-right">
@@ -109,7 +112,7 @@
                         <div class="form-bottom">
                             <div class="form-group">
                                 <label class="sr-only" for="form-first-name">Nome</label>
-                                <input type="text" name="form-first-name" id="form-first-name" tabindex="2" placeholder="Primeiro Nome..." class="form-first-name form-control">
+                                <input type="text" name="form-first-name" id="form-first-name" tabindex="1" placeholder="Primeiro Nome..." class="form-first-name form-control">
                             </div>
                             <div id="regis-fname" class="myErrorInfo alert alert-danger col-sm-12">
                                 <p>Erro: </p>
@@ -117,7 +120,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="form-last-name">Sobrenome</label>
-                                <input type="text" name="form-last-name" id="form-last-name" placeholder="Último Nome..." class="form-last-name form-control">
+                                <input type="text" name="form-last-name" id="form-last-name" tabindex="2" placeholder="Último Nome..." class="form-last-name form-control">
                             </div>
                             <div id="regis-lname" class="myErrorInfo alert alert-danger col-sm-12">
                                 <p>Erro: </p>
@@ -125,7 +128,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="form-email">E-mail</label>
-                                <input type="text" name="form-email" id="form-email" placeholder="Endereço Eletrônico..." class="form-email form-control">
+                                <input type="text" name="form-email" id="form-email" tabindex="3" placeholder="Endereço Eletrônico..." class="form-email form-control">
                             </div>
                             <div id="regis-email" class="myErrorInfo alert alert-danger col-sm-12">
                                 <p>Erro: </p>
@@ -133,7 +136,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="form-email">E-mail</label>
-                                <input type="text" name="form-regiscode" id="form-regiscode" placeholder="Código de Convite..." class="form-email form-control">
+                                <input type="text" name="form-regiscode" id="form-regiscode" tabindex="4" placeholder="Código de Convite..." class="form-email form-control">
                             </div>
                             <div id="regis-code" class="myErrorInfo alert alert-danger col-sm-12">
                                 <p>Erro: </p>
@@ -141,10 +144,10 @@
                             </div>
                             <div class="form-group">
                                 <label class="sr-only" for="form-about-yourself">Fale Sobre Você</label>
-                                <textarea name="form-about-yourself" placeholder="Comentário..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                                <textarea name="form-about-yourself" tabindex="4" placeholder="Comentário..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
                             </div>
                             <!-- Register Button -->
-                            <button type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register">Registre-me</button>
+                            <button type="submit" name="register-submit" id="register-submit" tabindex="5" class="form-control btn btn-register">Registre-me</button>
                             <!-- Back to Sign-in -->
                             <div class="form-group">
                                 <div class="col-md-12 control">
@@ -169,13 +172,49 @@
         <!-- Container END -->
     </div>
 
+
     <footer>
     </footer>
 
+
+    <!-- forgot Passowrd Modal-->
+    <div class="modal" id="modalForgot" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title">Esqueceu Sua Senha ?</h4>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <p>Não tem problema!
+                        <br> Informe o seu E-mail para criarmos uma nova:</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Nova Senha</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- forgot Passowrd Modal -->
+
+
+
+
+
     <!-- Javascript Common -->
     <script type="text/javascript" src="../Scripts/common/jquery/v3.2.1/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/common/popper/1.12.6/popper.min.js"></script>
     <script type="text/javascript" src="../Scripts/common/bootstrap/v4.0.0-beta.2/bootstrap.min.js"></script>
-
     <!-- Javascript Specific for this page -->
     <script src="../Scripts/Specific/Login.js"></script>
 
