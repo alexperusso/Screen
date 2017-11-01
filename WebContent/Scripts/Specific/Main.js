@@ -1,10 +1,10 @@
-//JQuery 
-
 function SwitchPageContext(htmlPageLocation) {
     $.get(htmlPageLocation, function(data) {
-        $("#PageSection").replaceWith(data);
-    })
-};
+        var htmlPage = $.parseHTML(data);
+        $("#PageSection").replaceWith(htmlPage);
+    });
+    return false;
+}
 /*
 $('#NewTestPlanModal').on('show.bs.modal', function(eventModal) {    
     var loadUrl = $(eventModal.relatedTarget).data('load-url');

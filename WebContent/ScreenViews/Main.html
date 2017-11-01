@@ -35,7 +35,9 @@ _______________________________________________________________________________
   <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"-->
+    <link rel="stylesheet" href="../Styles/commonLibs/googlefonts/Source_Sans_Pro/Source_Sans_Pro.css?family=Source+Sans+Pro:300,400">
+
 </head>
 <!-- BODY 
 -->
@@ -175,11 +177,11 @@ _______________________________________________________________________________
                                     <i class="fa fa-plus-square-o"></i> Novo
                                 </a>
                             </li>
-                            <li><a class="fa fa-remove" href="#"> Excluir</a></li>
+                            <li><a class="fa fa-remove" href="#" onclick="SwitchPageContext('./TestPlan.html');"> Excluir</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" onclick="SwitchPageContext('./About.html');return false;">
+                        <a href="#" onclick="SwitchPageContext('./About.html');">
                             <i class="fa fa-book"></i>
                             <span> Sobre...</span>
                         </a>
@@ -214,6 +216,7 @@ _______________________________________________________________________________
                 <!-- Main content -->
                 <section id="PageContent" class="content container-fluid">
                     <!--        Place to Show the App Page  -->
+
                 </section>
                 <!-- /.content -->
             </span>
