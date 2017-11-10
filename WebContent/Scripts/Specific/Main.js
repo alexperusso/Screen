@@ -1,11 +1,22 @@
 function SwitchPageContext(htmlPageLocation) {
+    $("#PageSection").load(htmlPageLocation);
+    $.get(htmlPageLocation, function(data) {
+        //document.getElementById("PageSection").innerHTML = data;
+            $("#PageSection").load(data);
+    });
+
+    return false;
+}
+
+/*
+function SwitchPageContext(htmlPageLocation) {
     $.get(htmlPageLocation, function(data) {
         var htmlPage = $.parseHTML(data);
         $("#PageSection").replaceWith(htmlPage);
     });
     return false;
 }
-/*
+
 $('#NewTestPlanModal').on('show.bs.modal', function(eventModal) {    
     var loadUrl = $(eventModal.relatedTarget).data('load-url');
     debugger;

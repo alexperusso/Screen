@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <!-- Content Wrapper. Contains page content -->
-<span id="PageSection">
-    <!-- Content Header (Page header) -->
+<span id="NewPageSection">
+<!-- Content Header (Page header) -->
+
     <section class="content-header">
         <section class="content-header">
             <h1>
@@ -19,20 +20,17 @@
             </ol>
         </section>
     </section>
-
     <!-- Main content -->
-    <section id="PageContent" class="content container-fluid">
+    <section id="PageContent" class="content container-fluid">        
         <!--        Place to Show the App Page  -->
-        <div class="box">
+        <div id="caixa" class="box">
             <div class="box-header with-border">
                 <h3 class="box-title">PrimeTester</h3>
 
                 <div class="box-tools pull-right">
-
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>                    
-        
+                    <button type="button" class="btn btn-box-tool" >
+                        <i class="fa fa-minus"></i>
+                    </button>
                     <h4 id="AppVersion">v. Beta</h4>
                 </div>
             </div>
@@ -46,6 +44,33 @@
             <!-- /.box-footer-->
         </div>
     </section>
-    <!-- /.content -->
+
+
+    <script>
+        /*
+        $("body script").each(function(){
+                    var oldScript = this.getAttribute("src");
+                    $(this).remove();
+                    var newScript;
+                    newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    newScript.src = oldScript;
+                    document.getElementsByTagName("head")[0].appendChild(newScript);
+        
+                });
+        
+                (function($) {
+        // Backbone code in here
+        })(jQuery);
+        
+            var allscrp = $('script').attr('src');
+        //    debugger
+            $('script').each(function(data){data.remove;});
+            $('script[src="' + src + '"]').remove();
+            //$('#caixa').boxWidget();
+        //    debugger;
+        */
+    </script>
+
 </span>
-<!-- /.content-wrapper -->
+<!-- New Page -->
