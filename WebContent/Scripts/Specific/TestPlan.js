@@ -1,6 +1,41 @@
 //Add Widget Events on .box class controls (minimize)
 $('.box').boxWidget();
 
+//  'scrollY'     : 200,  'scrollColapse' :false,
+$('#TestStepTableList').DataTable({
+    'dom': '<"top"f>rt<"bottom"ilp><"clear">',
+    'paging'      : false,    
+    'lengthChange': false,
+    'searching'   : true,
+    'ordering'    : true,
+    'info'        : false,
+    'autoWidth'   : false,
+    'language' : { "sEmptyTable": "Nenhum registro encontrado",
+        "sInfo": "_START_ até _END_ de _TOTAL_",
+        "sInfoEmpty": "Mostrando 0 até 0 de 0 registros",
+        "sInfoFiltered": "(Filtrados de _MAX_ registros)",
+        "sInfoPostFix": "",
+        "sInfoThousands": ".",
+        "sLengthMenu": "_MENU_ resultados por página",
+        "sLoadingRecords": "Carregando...",
+        "sProcessing": "Processando...",
+        "sZeroRecords": "Nenhum registro encontrado",
+        "sSearch": "Filtrar",
+        "oPaginate": {
+            "sNext": ">",
+            "sPrevious": "<",
+            "sFirst": "<<",
+            "sLast": ">>"
+        },
+        "oAria": {
+            "sSortAscending": ": Ordenar colunas de forma ascendente",
+            "sSortDescending": ": Ordenar colunas de forma descendente"
+        }
+    }
+
+});
+
+
 //Add Scroll to the Divs
 $('.slimScrollDiv').slimScroll({
     height: '210px'

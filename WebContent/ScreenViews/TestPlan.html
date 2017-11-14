@@ -6,7 +6,7 @@
     <!-- STYLES -->
     <span id="CSSStyles">            
         <!-- Data Tables -->
-        <link rel="stylesheet" href="../Styles/commonLibs/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../Styles/commonLibs/datatables.net-bs/css/dataTables.bootstrap4.min.css">
         <!-- Tree View -->
         <link rel="stylesheet" href="../Styles/commonLibs/bootstrap-treeview/bootstrap-treeview.css">
         <!-- Local Style -->
@@ -177,7 +177,7 @@
 
         <!-- Buttons and Steps -->
         <div class="col-md-8">
-            <div id="TestSteps" class="col-md-6 column">
+            <div id="TestSteps" class="col-md-5 column">
                 <!-- Test Steps -->
                 <div class="box box-primary portlet">
                     <button id="btnHideLeftWidgetArea" type="button" onclick="ToggleLeftArea();" class="btn" style="float:left; font-size:18px; position:absolute; left:-40px;">
@@ -195,77 +195,27 @@
                     </div>
                     <!-- Step Body -->
                     <div class="box-body table-responsive no-padding portlet-content scrollDivStepCtrl">
-                        <table class="table table-hover">
-                            <tr>
-                                <th style="width: 10px ">#</th>
-                                <th>Identificação</th>
-                                <th>
-                                    <div class="input-group input-group-sm" style="width: 135px;">
-                                        <input type="text " name="table_search " class="form-control pull-right" placeholder="Filtrar ">
-                                        <div class="input-group-btn ">
-                                            <button type="submit" class="btn btn-default ">
-                                                <i class="fa fa-search "></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </th>
-                            </tr>
-                            <tr id="StepListItem-0 ">
-                                <td id="StepOrderNum" class="label-warning">1.</td>
-                                <td id="StepDesc-0 ">Passo XYZ</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td><a href="#">Começar apertar Botao de Telas</a></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Começar apertar Botao de Telas</td>
-                                <td>Comandos aqui</td>
-                            </tr>
-
+                        <table id="TestStepTableList" class="table table-bordered table-hover" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th style="width: 10px ">#</th>
+                                    <th>Identificação</th>
+                                </tr>            
+                            </thead>
+                            <tbody>
+                                <tr id="StepListItem-0 ">
+                                    <td id="StepOrderNum" class="label-warning">1.</td>
+                                    <td id="StepDesc-0 ">Passo XYZ</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td><a href="#">Começar apertar Botao de Telas</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>Começar apertar Botao de Telas</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <!-- Step Footer -->
@@ -317,11 +267,11 @@
 <!-- REQUIRED JS SCRIPTS -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js "></script>
 <!-- Data Tables -->
-<script src="../Scripts/common/datatables.net/js/jquery.dataTables.min.js "></script>
-<script src="../Styles/commonLibs/datatables.net-bs/js/dataTables.bootstrap.min.js "></script>
+<script src="../Scripts/common/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../Styles/commonLibs/datatables.net-bs/js/dataTables.bootstrap4.min.js"></script>
 <!-- Tree View -->
-<script src="../Scripts/common/bootstrap-treeview/bootstrap-treeview.js "></script>
+<script src="../Scripts/common/bootstrap-treeview/bootstrap-treeview.js"></script>
 <!-- SlimScroll -->
-<script src="../Scripts/common/jquery-slimscroll/jquery.slimscroll.min.js "></script>
+<script src="../Scripts/common/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- Specific for this page -->
 <script src="../Scripts/Specific/TestPlan.js"></script>
