@@ -2,7 +2,7 @@
 $('.box').boxWidget();
 
 //  'scrollY'     : 200,  'scrollColapse' :false,
-$('#TestStepTableList').DataTable({
+var stepTable = $('#TestStepTableList').DataTable({
     'dom': '<"top"f>rt<"bottom"ilp><"clear">',
     'paging'      : false,    
     'lengthChange': false,
@@ -35,6 +35,20 @@ $('#TestStepTableList').DataTable({
 
 });
 
+$('#TestStepTableList').on('click', 'tr', function () {
+    debugger;
+    if ($(this).hasClass('selected')) {
+        $(this).removeClass('selected');
+    }
+    else {        
+        stepTable.$('tr.selected').removeClass('selected');
+        $(this).addClass('selected');
+    }
+} );
+
+$('#removeStep').click( function () {
+    stepTable.row('.selected').remove().draw( false );
+    } );
 
 //Add Scroll to the Divs
 $('.slimScrollDiv').slimScroll({

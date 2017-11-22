@@ -6,6 +6,7 @@
     <!-- STYLES -->
     <span id="CSSStyles">            
         <!-- Data Tables -->
+        <link rel="stylesheet" href="../Styles/commonLibs/datatables.net-bs/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="../Styles/commonLibs/datatables.net-bs/css/dataTables.bootstrap4.min.css">
         <!-- Tree View -->
         <link rel="stylesheet" href="../Styles/commonLibs/bootstrap-treeview/bootstrap-treeview.css">
@@ -183,7 +184,7 @@
                     <button id="btnHideLeftWidgetArea" type="button" onclick="ToggleLeftArea();" class="btn" style="float:left; font-size:18px; position:absolute; left:-40px;">
                         <i class="fa fa-toggle-left"></i>
                     </button>                   
-
+ 
                     <div class="box-header with-border portlet-header">
                         <h3 class="box-title ">Passos do Teste</h3>
                         <!-- Step Header -->
@@ -230,7 +231,7 @@
                             </button>
                             </div>
                             <div class="col-md-3">
-                                <button type="button" class="btn btn-block btn-danger btn-xs">
+                                <button id="removeStep" type="button" class="btn btn-block btn-danger btn-xs">
                                 <i class ="fa fa-minus-square"></i>
                             </button>
                             </div>
